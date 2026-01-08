@@ -1,0 +1,37 @@
+/* Создайте файл src/main/resources/style.css */
+
+.keyword {
+    -fx-fill: #569cd6;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #ce9178;
+}
+
+.comment {
+    -fx-fill: #6a9955;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #b5cea8;
+}
+
+.annotation {
+    -fx-fill: #c586c0;
+}
+
+.bracket {
+    -fx-fill: #ffd700;
+    -fx-font-weight: bold;
+}
+
+/* Стили для номеров строк */
+.lineno {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #858585;
+    -fx-padding: 0 10 0 5;
+    -fx-font-family: 'JetBrains Mono', 'Consolas', monospace;
+    -fx-font-size: 14px;
+}
