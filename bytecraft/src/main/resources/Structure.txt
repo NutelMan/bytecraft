@@ -1,0 +1,25 @@
+ByteCraft/
+├── src/
+│   └── main/
+│       └── java/
+│           └── su/
+│               └── bytecraft/
+│                   ├── Main.java                    # Точка входа
+│                   ├── Decompiler.java              # Декомпилятор (CFR)
+│                   ├── JarPatcher.java              # Патчер JAR файлов
+│                   ├── JavaCompiler.java            # Компилятор Java
+│                   ├── PluginVersionDetector.java   # Детектор версий плагинов
+│                   ├── VersionUtils.java            # Утилиты для работы с версиями
+│                   └── ide/                         # Пакет IDE
+│                       ├── IDE.java                 # Главный класс IDE
+│                       ├── SearchManager.java       # Менеджер поиска
+│                       ├── SearchResult.java        # Результаты поиска
+│                       └── UIStyles.java           # Стили UI
+├── libs/                                            # Библиотеки
+│   ├── cfr.jar                                     # CFR декомпилятор
+│   ├── asm.jar                                     # ASM для байткода
+│   └── (другие зависимости)
+└── ByteCraft.jar                                   # Скомпилированный JAR
+        └── Resources\
+            ├── Structure.txt #Этот файл с всей структурой проекта
+            └── style.css

@@ -416,7 +416,7 @@ public class JavaCompiler {
         }
     }
 
-    // Старый метод для обратной совместимости
+    // Старый метод для обратной совместимости (нужен для JarPatcher)
     public byte[] compileJavaSource(String javaCode, String className, List<File> classpath) throws Exception {
         return compileJavaSource(javaCode, className, classpath, null);
     }

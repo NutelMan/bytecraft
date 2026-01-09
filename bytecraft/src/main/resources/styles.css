@@ -1,37 +1,241 @@
-/* Создайте файл src/main/resources/style.css */
+/* ByteCraft - Основные стили */
 
-.keyword {
-    -fx-fill: #569cd6;
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* Тулбар */
+.toolbar {
+    -fx-background-color: #252526;
+    -fx-padding: 10;
+}
+
+.toolbar-button {
+    -fx-background-color: #007acc;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 8 15;
+    -fx-cursor: hand;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.toolbar-button:hover {
+    -fx-background-color: #0088dd;
+}
+
+.toolbar-button:pressed {
+    -fx-background-color: #0066aa;
+}
+
+/* Сайдбар */
+.sidebar {
+    -fx-background-color: #252526;
+    -fx-padding: 10;
+}
+
+.sidebar-title {
+    -fx-text-fill: #cccccc;
     -fx-font-weight: bold;
-}
-
-.string {
-    -fx-fill: #ce9178;
-}
-
-.comment {
-    -fx-fill: #6a9955;
-    -fx-font-style: italic;
-}
-
-.number {
-    -fx-fill: #b5cea8;
-}
-
-.annotation {
-    -fx-fill: #c586c0;
-}
-
-.bracket {
-    -fx-fill: #ffd700;
-    -fx-font-weight: bold;
-}
-
-/* Стили для номеров строк */
-.lineno {
-    -fx-background-color: #2b2b2b;
-    -fx-text-fill: #858585;
-    -fx-padding: 0 10 0 5;
-    -fx-font-family: 'JetBrains Mono', 'Consolas', monospace;
     -fx-font-size: 14px;
+}
+
+.tree-view {
+    -fx-background-color: transparent;
+}
+
+.tree-cell {
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 12px;
+}
+
+.tree-cell:selected {
+    -fx-background-color: #094771;
+    -fx-text-fill: white;
+}
+
+/* Редактор кода */
+.code-editor {
+    -fx-font-family: "Consolas", "Monaco", "Courier New", monospace;
+    -fx-font-size: 13px;
+    -fx-control-inner-background: #1e1e1e;
+    -fx-text-fill: #cccccc;
+}
+
+.code-editor .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.code-editor .scroll-bar {
+    -fx-background-color: #252526;
+}
+
+.code-editor .scroll-bar .thumb {
+    -fx-background-color: #3e3e42;
+    -fx-background-radius: 3;
+}
+
+.code-editor .scroll-bar .thumb:hover {
+    -fx-background-color: #4a4a4f;
+}
+
+/* Панель поиска */
+.search-panel {
+    -fx-background-color: #2d2d30;
+    -fx-padding: 5;
+}
+
+.search-field {
+    -fx-background-color: #3e3e42;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #888888;
+    -fx-border-color: #3e3e42;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.search-field:focused {
+    -fx-border-color: #007acc;
+}
+
+.check-box {
+    -fx-text-fill: #cccccc;
+}
+
+.search-button {
+    -fx-background-color: #007acc;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.nav-button {
+    -fx-background-color: #3e3e42;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.search-result-label {
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 12px;
+}
+
+/* Статус бар */
+.status-bar {
+    -fx-background-color: #007acc;
+    -fx-padding: 5 10 5 10;
+}
+
+.status-label {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+.compiler-label {
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+}
+
+/* Диалоги */
+.dialog-pane {
+    -fx-background-color: #1e1e1e;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #252526;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: #cccccc;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #007acc;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #0088dd;
+}
+
+/* Списки */
+.list-view {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: white;
+}
+
+.list-cell {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: white;
+    -fx-font-family: "Consolas", monospace;
+}
+
+.list-cell:selected {
+    -fx-background-color: #094771;
+    -fx-text-fill: white;
+}
+
+.list-cell:hover {
+    -fx-background-color: #2d2d30;
+}
+
+/* Прогресс бар */
+.progress-bar {
+    -fx-accent: #007acc;
+}
+
+.progress-bar .track {
+    -fx-background-color: #3e3e42;
+}
+
+/* Текстовые области */
+.text-area {
+    -fx-control-inner-background: #252526;
+    -fx-text-fill: white;
+    -fx-font-family: "Consolas", monospace;
+}
+
+/* Метки */
+.label-white {
+    -fx-text-fill: white;
+}
+
+.label-gray {
+    -fx-text-fill: #cccccc;
+}
+
+.label-blue {
+    -fx-text-fill: #4ec9b0;
+    -fx-font-weight: bold;
+}
+
+/* Контекстное меню */
+.context-menu {
+    -fx-background-color: #252526;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.menu-item:hover {
+    -fx-background-color: #094771;
+}
+
+/* Вкладки (если понадобятся) */
+.tab-pane {
+    -fx-background-color: #1e1e1e;
+}
+
+.tab {
+    -fx-background-color: #252526;
+    -fx-text-fill: #cccccc;
+}
+
+.tab:selected {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: white;
 }

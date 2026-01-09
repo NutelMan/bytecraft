@@ -1,6 +1,7 @@
 package su.bytecraft;
 
 import javafx.application.Application;
+import su.bytecraft.ide.IDE;
 
 public class Main {
     public static void main(String[] args) {
